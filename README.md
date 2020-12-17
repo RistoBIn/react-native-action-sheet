@@ -4,6 +4,10 @@ React native action sheet with native iOS and android (using the built-in [Alert
 
 This component is a actionsheet component so that user can set "Disabled" button to ActionSheet. (iOS & Android)
 
+iOS | Android
+------ | -------
+<img title="iOS" src="https://i.ibb.co/j6kscsx/iPhone.jpg" height=550/> | <img title="Android" src="https://i.ibb.co/HDpPnB8/android.jpg" height=550/>
+
 ## Usage
 
 ```javascript
