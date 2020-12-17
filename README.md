@@ -2,9 +2,13 @@
 
 React native action sheet with native iOS and android (using the built-in [AlertDialog](https://developer.android.com/reference/android/app/AlertDialog.html) for android, [UIAlertController](https://developer.apple.com/documentation/uikit/uialertcontroller?language=objc) for iOS)
 
-This component is actionsheet component so that user can set "Disabled" button to ActionSheet. (iOS & Android)
+This component is a actionsheet component so that user can set "Disabled" button to ActionSheet. (iOS & Android)
 
 ## Usage
+
+iOS | Android
+------ | -------
+<img title="iOS" src="https://i.ibb.co/j6kscsx/iPhone.jpg" height=550/> | <img title="Android" src="https://i.ibb.co/HDpPnB8/android.jpg" height=550/>
 
 ```javascript
 import ActionSheet from 'react-native-action-sheet';
