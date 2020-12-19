@@ -8,7 +8,7 @@ This component is a actionsheet component so that user can set "Disabled" button
 
 iOS | Android
 ------ | -------
-<img title="iOS" src="https://i.ibb.co/QYYCY84/ios.png" height=550/> | <img title="Android" src="https://i.ibb.co/HDpPnB8/android.jpg" height=550/>
+<img title="iOS" src="https://i.ibb.co/QYYCY84/ios.png" height=550/> | <img title="Android" src="https://i.ibb.co/8bGBfL0/1608379266162.jpg" height=550/>
 
 ```javascript
 import ActionSheet from 'react-native-action-sheet';

@@ -29,7 +29,7 @@ android {
     buildToolsVersion safeExtGet('buildToolsVersion', '28.0.3')
 
     defaultConfig {
-        minSdkVersion safeExtGet('minSdkVersion', 16)
+        minSdkVersion safeExtGet('minSdkVersion', 17)
         targetSdkVersion safeExtGet('targetSdkVersion', 25)
         versionCode 1
         // get version name from package.json version
@@ -45,5 +45,8 @@ repositories {
 }
 
 dependencies {
-    implementation "com.facebook.react:react-native:+"  // From node_modules
+    implementation "com.facebook.react:react-native:+"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'// From node_modules
 }
