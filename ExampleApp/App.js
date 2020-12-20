@@ -2,11 +2,9 @@ import React from 'react';
 import { View, SafeAreaView, TouchableOpacity, Text } from 'react-native';
 import ActionSheet from 'react-native-action-sheet';
 
-const processColor = require('react-native/Libraries/StyleSheet/processColor');
-
 const App = () => {
     const showActionSheet = () => {
-        var BUTTONSiOS = [
+        var BUTTONS = [
             { name: 'Option 0', disabled: true },
             { name: 'Option 1' },
             { name: 'Option 2', disabled: true },
@@ -14,23 +12,19 @@ const App = () => {
             { name: 'Cancel' }
         ];
 
-        var BUTTONSandroid = [
-            { name: 'Option 0', disabled: true },
-            { name: 'Option 1', },
-            { name: 'Option 2', },
-            { name: 'Option 3', disabled: true },
-        ];
-
         var DESTRUCTIVE_INDEX = 3;
         var CANCEL_INDEX = 4;
+        
         ActionSheet.showActionSheetWithOptions({
-            options: (Platform.OS == 'ios') ? BUTTONSiOS : BUTTONSandroid,
-            cancelButtonIndex: CANCEL_INDEX,
-            destructiveButtonIndex: DESTRUCTIVE_INDEX,
-            tintColor: 'blue',
-            title: "Hello"
-        }, (buttonIndex) => {
-            console.log('button clicked :', buttonIndex);
+          options: BUTTONS,
+          cancelButtonIndex: CANCEL_INDEX,
+          destructiveButtonIndex: DESTRUCTIVE_INDEX,
+          tintColor: 'blue',
+          title: "Hello",
+          message: "This component is ActionSheet with disabled button."
+        },
+        (buttonIndex) => {
+          console.log('button clicked :', buttonIndex);
         });
     }
 

@@ -14,7 +14,7 @@ iOS | Android
 import ActionSheet from 'react-native-action-sheet';
 import { Platform } from 'react-native';
 
-var BUTTONSiOS = [
+var BUTTONS = [
     { name: 'Option 0', disabled: true },
     { name: 'Option 1' },
     { name: 'Option 2', disabled: true },
@@ -22,18 +22,11 @@ var BUTTONSiOS = [
     { name: 'Cancel' }
 ];
 
-var BUTTONSandroid = [
-    { name: 'Option 0', disabled: true },
-    { name: 'Option 1', },
-    { name: 'Option 2', },
-    { name: 'Option 3', disabled: true },
-];
-
 var DESTRUCTIVE_INDEX = 3;
 var CANCEL_INDEX = 4;
 
 ActionSheet.showActionSheetWithOptions({
-  options: (Platform.OS == 'ios') ? BUTTONSiOS : BUTTONSandroid,
+  options: BUTTONS,
   cancelButtonIndex: CANCEL_INDEX,
   destructiveButtonIndex: DESTRUCTIVE_INDEX,
   tintColor: 'blue',

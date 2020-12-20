@@ -5,7 +5,7 @@ const { ActionSheet } = NativeModules;
 const processColor = require('react-native/Libraries/StyleSheet/processColor');
 const invariant = require('invariant');
 
-export default (Platform.OS === 'ios') ? {
+export default {
     showActionSheetWithOptions: (options, callback) => {
         invariant(
             typeof options === 'object' && options !== null,
@@ -37,4 +37,4 @@ export default (Platform.OS === 'ios') ? {
             callback,
         );
     }
-} : ActionSheet;
+};
